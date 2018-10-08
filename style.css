@@ -1,0 +1,147 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    transition: 400ms;
+    font-size: 15px;
+}
+
+nav.sticky {
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px 100px;
+}
+
+nav .title-name {
+    float: left;
+    padding: 22px 60px;
+    height: 80px;
+    font-size: 25px;
+    transition: 400ms;
+    position: absolute;
+}
+
+nav.sticky .title-name {
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    list-style: none;
+    margin: 0 55px;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 12px 30px;
+    line-height: 80px;
+    color: #333333;
+    text-transform: uppercase;
+    transition: 400ms;
+}
+
+nav ul li a:focus {
+    outline: none;
+}
+
+nav.sticky ul li a {
+    color: #ffffff;
+}
+
+nav ul li a.active {
+    background-color: #FF6347;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/beach.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.summary .content .summary-name {
+    letter-spacing: 25px;
+    font-weight: normal;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.summary .content .summary-hobby {
+    font-size: 24px;
+    margin:0;
+}
+
+.profile {
+    height: 420px;
+}
+
+.profile .row {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .row .avatar {
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.profile .row p {
+    line-height: 25px;
+}
+
+footer {
+    background-color: #282828;
+    height: 200px;
+}
+
+footer .contact {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+footer .contact ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contact ul li a i {  
+    color: #ffffff;
+    padding: 0;
+    margin: 0 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+footer .contact p {
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+}
