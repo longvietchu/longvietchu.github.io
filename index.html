@@ -1,49 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Long Chu</title>
-    <link rel="shorcut icon" type="image/jpg" href="images/pikalong.jpeg">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shorcut icon" type="image/jpg" href="images/pikalong.jpeg">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Long Chu</title>
 </head>
-<body>
+
+<body data-spy="scroll" data-target="#main-navigation" data-offset="0">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="main-navigation">
     <div class="container">
-        <nav>
-            <div class="title-name">Long Chu</div>
-            <ul>
-                <li><a href="software">Software</a></li>
-                <li><a href="electronics">Electronics</a></li>
-                <li><a href="About me" class="active">About me</a></li>
-            </ul>
-        </nav>
-        <div class="summary">
-            <div class="content">
-                <p class="summary-name">Long Chu</p>
-                <p class="summary-hobby">an electronics hobbyist passionate for<br>innovative technology and digital content</p>
-            </div>
-        </div>
-        <section class="profile">
-            <div class="row">
-                <img src="images/longchu.JPG" alt="Long Viet Chu" class="avatar">
-                <p class="about">Welcome to my website. I am an electronics hobbyist, a programmer, and a second year Electricals and Electronics student at Hanoi University of science and technology. In the past few years I have worked on many independent projects alongside my formal education. My goal is to develop innovative solutions in the multimedia and automation industries through my combined software and hardware experience. I have advanced knowledge in C and Java, experience designing custom electronic circuits/robotics, as well as building website using HTML/CSS/JavaScript for client-side and NodeJS/PHP for server-side. I also use some popular frameworks for web developement such as Bootstrap/ExpressJS/CakePHP. I created this site to share my interests, as they evolve, and connect with like minded individuals.</p>
-            </div>
-        </section>
-        <footer>
-            <div class="contact">
-                <ul>
-                    <li><a href="https://www.facebook.com/vietlongchu52" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://github.com/longvietchu" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="mail.google.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-                </ul>
-                <p>Email me with any suggestions, collaborations, or just to talk!<br>vietlong5299@gmail.com</p>
-            </div>
-        </footer>
+        <span class="navbar-brand mb-0 h1 font-weight-bold">LongCV</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>     
+        </ul>
+      </div>
     </div>
-    <script type="text/javascript" src="main.js"></script>
+  </nav>
+
+  <div class="container-fluid parallax" id="home">
+    <div class="row">
+      <div class="overlay"></div>
+      <div class="col-md-4 mx-auto text-center text-light" id="summary">
+        <h1 class="font-weight-bold text-uppercase border-bottom border-light">I'm Chu Viet Long</h1>
+        <h5>an crazy guy passionate for innovative electronic and software development</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="about">
+    <div class="row justify-content-center">
+      <div class="text-center my-3">
+        <h1 class="text-uppercase">About me</h1>
+      </div> 
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-2">
+        <img src="images/longchu.JPG" alt="Chu Viet Long" class="rounded-circle w-100">
+      </div>
+      <div class="col-lg-6 my-2">
+        <p class="text-uppercase">Summary</p>
+        <p>
+          I'm Chu Viet Long, a second year Electricals and Electronics student at Hanoi University of Science and Technology and a programmer with good knowledge of Web Application Development. <br>
+          Learning technologies is what I am passionate about (Almost of knowledge of web development is what I self-taught). I like helping other and work well with group.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container border-top border-dark mb-5" id="skills">
+    <div class="row justify-content-center">
+      <div class="text-center my-3">
+        <h1 class="text-uppercase">Skills</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>PROGRAMMING LANGUAGES</h5>
+          <ul>
+            <li>C</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>HTML/CSS, JavaScript</li>
+          </ul>
+          <h5>FRAMEWORKS & PLATFORMS</h5>
+          <ul>
+            <li>Jquery, Bootstrap</li>
+            <li>CakePHP, NodeJS, ExpressJS</li>
+          </ul>
+      </div>
+    </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>DATABASES</h5>
+          <ul>
+            <li>MySQL, MongoDB</li>
+          </ul>
+          <h5>IDE</h5>
+          <ul>
+            <li>DevC++, CodeBlock</li>
+            <li>IntelliJ, Eclipse</li>
+          </ul>
+          <h5>FOREIGN LANGUAGES</h5>
+          <ul>
+            <li>English</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container border-top border-dark" id="education">
+    <div class="row justify-content-center">
+      <div class="text-center my-3">
+        <h1 class="text-uppercase">Education</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-8">
+        <h3 class="text-center">Hanoi University of Science and Technology</h3>
+        <p class="text-center">I'm second year student majoring in Electricals and Electronics</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-dark mt-5 pb-5">
+    <div class="row">
+      <div class="col-md-6 mx-auto mt-5 my-3 text-center">
+        <ul class="list-inline" id="contact">
+          <li class="list-inline-item mx-3"><a href="https://www.facebook.com/vietlongchu52" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+          <li class="list-inline-item mx-3"><a href="https://github.com/longvietchu" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+          <li class="list-inline-item mx-3"><a href="https://stackoverflow.com/users/9005876/long-chu-viet" target="_blank"><i class="fab fa-stack-overflow fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 m-auto text-center text-light">
+        <h5>Email me with any suggestions, collaborations, or just to talk!<br>vietlong5299@gmail.com</h5>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
